@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,700);
+
+body {
+	margin-top: 50px;
+	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: rgb(48, 48, 48);
+}
+
+a {
+	text-decoration: none;
+	background-color: #f0f0f0;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover, a:focus {
+	color: #3c78d8;
+}
+
+p, address {
+	margin-bottom: 2px;
+	line-height: 17px;
+}
+
+header > h1, section > h1 {
+	font-family: "Oswald", "Georgia", "Times New Roman", serif;
+	color: #3c78d8;
+}
+
+header > h1 {
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+.container > header p, .container > header address {
+	margin-bottom: 8px;
+}
+
+section > h1 {
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+article {
+	margin-bottom: 20px;
+}
+
+article > header > h1 {
+	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	margin-bottom: 0;
+	color: inherit;
+}
+
+article > header > span + span {
+	margin-left: 2px;
+}
+
+article > header > span + span::before {
+	content: '@';
+	margin-right: 4px;
+}
+
+article > header > span {
+	color: rgb(168, 168, 168);
+	font-size: 12px;
+}
+
+article > header > span a {
+	color: inherit;
+}
+
+article > header address {
+	display: inline;
+}
+
+article > header address + time {
+	margin-left: 6px;
+}
+
+article > header address + time::before {
+	content: '—';
+	margin-right: 6px;
+}
+
+ul > li
+{
+	margin-left: 22px;
+	margin-bottom: 0;
+	list-style: disc;
+}
