@@ -9,7 +9,7 @@ body {
 
 a {
 	text-decoration: none;
-	background-color: #f0f0f0;
+	background-color: #eaeaea;
 }
 
 a:visited {
@@ -102,4 +102,5 @@ em {
 	font-style: normal;
 	font-weight: bold;
 	color: rgb(100, 100, 100);
+	margin-right: 6px;
 }
