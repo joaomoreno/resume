@@ -89,9 +89,8 @@ article > header address + time::before {
 	margin-right: 6px;
 }
 
-ul > li
-{
-	margin-left: 22px;
-	margin-bottom: 0;
-	list-style: disc;
+em {
+	font-style: normal;
+	font-weight: bold;
+	color: rgb(100, 100, 100);
 }
