@@ -4,6 +4,7 @@ body {
 	margin-top: 50px;
 	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 12px;
+	line-height: 17px;
 	color: rgb(48, 48, 48);
 }
 
@@ -22,7 +23,6 @@ a:hover, a:focus {
 
 p, address {
 	margin-bottom: 2px;
-	line-height: 17px;
 }
 
 .me {
@@ -40,7 +40,7 @@ header > h1, section > h1 {
 }
 
 header > h1 {
-	font-size: 42px;
+	font-size: 350%;
 	margin-bottom: 20px;
 }
 
@@ -49,8 +49,8 @@ header > h1 {
 }
 
 section > h1 {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 140%;
+	line-height: 120%;
 	text-transform: uppercase;
 }
 
@@ -60,9 +60,9 @@ article {
 
 article > header > h1 {
 	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 112%;
 	font-weight: bold;
-	line-height: 14px;
+	line-height: 150%;
 	margin-bottom: 0;
 	color: inherit;
 }
@@ -78,7 +78,7 @@ article > header > span + span::before {
 
 article > header > span {
 	color: rgb(168, 168, 168);
-	font-size: 12px;
+	font-size: 100%;
 }
 
 article > header > span a {
