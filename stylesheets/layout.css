@@ -3,8 +3,8 @@
 body {
 	margin-top: 50px;
 	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	line-height: 17px;
+	font-size: 14px;
+	line-height: 21px;
 	color: rgb(48, 48, 48);
 }
 
@@ -22,7 +22,7 @@ a:hover, a:focus {
 }
 
 p, address {
-	margin-bottom: 2px;
+	margin-bottom: 0;
 }
 
 .me {
