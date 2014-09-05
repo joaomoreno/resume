@@ -48,6 +48,10 @@ header > h1 {
 	margin-bottom: 8px;
 }
 
+.container > header p:last-child {
+	margin-bottom: 20px;
+}
+
 section > h1 {
 	font-size: 140%;
 	line-height: 120%;
