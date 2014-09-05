@@ -108,3 +108,24 @@ em {
 	color: rgb(100, 100, 100);
 	margin-right: 6px;
 }
+
+@media print {
+	@page {
+		margin: 15mm;
+	}
+
+	body {
+		font-size: 14pt;
+		line-height: 21pt;
+	}
+
+	.container > header {
+		font-size: 80%;
+		line-height: 160%;
+	}
+
+	article > header > span {
+		font-size: 80%;
+		line-height: 80%;
+	}
+}
