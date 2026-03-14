@@ -17,42 +17,46 @@ a:visited {
 	color: inherit;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
 	color: #3c78d8;
 }
 
-p, address {
+p,
+address {
 	margin-bottom: 0;
 }
 
 .me {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
 	margin-bottom: 20px;
 }
 
-header > h1, section > h1 {
+header>h1,
+section>h1 {
 	font-family: "Oswald", "Georgia", "Times New Roman", serif;
 	color: #3c78d8;
 }
 
-header > h1 {
+header>h1 {
 	font-size: 350%;
 	margin-bottom: 20px;
 }
 
-.container > header p, .container > header address {
+.container>header p,
+.container>header address {
 	margin-bottom: 8px;
 }
 
-.container > header p:last-child {
+.container>header p:last-child {
 	margin-bottom: 20px;
 }
 
-section > h1 {
+section>h1 {
 	font-size: 140%;
 	line-height: 120%;
 	text-transform: uppercase;
@@ -62,7 +66,7 @@ article {
 	margin-bottom: 20px;
 }
 
-article > header > h1 {
+article>header>h1 {
 	font-family: "Open Sans", "HelveticaNeue", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 112%;
 	font-weight: bold;
@@ -71,33 +75,33 @@ article > header > h1 {
 	color: inherit;
 }
 
-article > header > span + span {
+article>header>span+span {
 	margin-left: 2px;
 }
 
-article > header > span + span::before {
+article>header>span+span::before {
 	content: '@';
 	margin-right: 4px;
 }
 
-article > header > span {
+article>header>span {
 	color: rgb(168, 168, 168);
 	font-size: 100%;
 }
 
-article > header > span a {
+article>header>span a {
 	color: inherit;
 }
 
-article > header address {
+article>header address {
 	display: inline;
 }
 
-article > header address + time {
+article>header address+time {
 	margin-left: 6px;
 }
 
-article > header address + time::before {
+article>header address+time::before {
 	content: '—';
 	margin-right: 6px;
 }
@@ -119,12 +123,12 @@ em {
 		line-height: 21pt;
 	}
 
-	.container > header {
+	.container>header {
 		font-size: 80%;
 		line-height: 160%;
 	}
 
-	article > header > span {
+	article>header>span {
 		font-size: 80%;
 		line-height: 80%;
 	}

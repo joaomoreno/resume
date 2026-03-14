@@ -1,56 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>João Moreno's Resume</title>
 	<meta name="description" content="João Moreno's Résumé">
 	<meta name="author" content="João Moreno">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/style.css">
 
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-
-	<link rel="shortcut icon" href="https://s.gravatar.com/avatar/1843a1bc68a178889603cf8659f4b2ec">
+	<link rel="shortcut icon" href="https://s.gravatar.com/avatar/1843a1bc68a178889603cf8659f4b2ec?size=256">
+	<base target="_blank">
+	<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'auto')</script>
 </head>
+
 <body>
+	<div class="theme-toggle" role="radiogroup" aria-label="Theme">
+		<button type="button" data-theme="light" aria-label="Light theme">
+			<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="12" cy="12" r="5" />
+				<line x1="12" y1="1" x2="12" y2="3" />
+				<line x1="12" y1="21" x2="12" y2="23" />
+				<line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+				<line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+				<line x1="1" y1="12" x2="3" y2="12" />
+				<line x1="21" y1="12" x2="23" y2="12" />
+				<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+				<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+			</svg>
+		</button>
+		<button type="button" data-theme="auto" aria-label="System theme">
+			<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+				<line x1="8" y1="21" x2="16" y2="21" />
+				<line x1="12" y1="17" x2="12" y2="21" />
+			</svg>
+		</button>
+		<button type="button" data-theme="dark" aria-label="Dark theme">
+			<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+			</svg>
+		</button>
+	</div>
 	<div class="container">
-		<header class="three columns">
-			<img src="https://s.gravatar.com/avatar/1843a1bc68a178889603cf8659f4b2ec" class="me">
-			<h1>João Moreno</h1>
-			<p>
-				<a href="tel:+41788446368">+41 78 844 63 68</a><br/>
-			</p>
-			<address>
-				Zürich, Switzerland
-			</address>
-			<p>
-				<a href="mailto:mail@joaomoreno.com">mail@joaomoreno.com</a>
-			</p>
-		</header>
-		<div class="thirteen columns clearfix">
-			<section class="thirteen columns">
-				<h1>Work</h1>
+		<aside class="sidebar">
+			<img src="https://s.gravatar.com/avatar/1843a1bc68a178889603cf8659f4b2ec?size=256" class="avatar"
+				alt="João Moreno">
+			<h1 class="name">João Moreno</h1>
+			<nav class="contact">
+				<a href="https://github.com/joaomoreno">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+						<path
+							d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+					</svg>
+					GitHub
+				</a>
+				<a href="https://www.linkedin.com/in/joaomoreno">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+						<path
+							d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+					</svg>
+					LinkedIn
+				</a>
+				<a href="tel:+41788446368">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path
+							d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+					</svg>
+					+41 78 844 63 68
+				</a>
+				<a href="mailto:hello@joaomoreno.com">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+						<polyline points="22,6 12,13 2,6" />
+					</svg>
+					hello@joaomoreno.com
+				</a>
+				<address>
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+						<circle cx="12" cy="10" r="3" />
+					</svg>
+					Zürich, Switzerland
+				</address>
+			</nav>
+		</aside>
+
+		<main class="content">
+			<section>
+				<h2>Work</h2>
 				<article>
 					<header>
-						<h1>Principal Software Engineer</h1>
-						<span><a href="https://www.microsoft.com/">Microsoft</a></span>
-						<span><address>Zürich, Switzerland</address><time>since 2011</time></span>
+						<h3>Principal Software Engineering Manager</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.microsoft.com/">Microsoft</a></span>
+							<span class="location">Zürich, Switzerland</span>
+							<span class="date">since 2022</span>
+						</div>
 					</header>
 					<p>
-						Front- and back-end engineering work on the <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-						<a href="https://github.com/Microsoft/vscode">open source</a> editor.
-						Released
-						<a href="https://channel9.msdn.com/Series/Visual-Studio-Online-Monaco">Visual Studio Online "Monaco"</a>
-						on the <a href="https://azure.microsoft.com/en-us/services/websites/">Windows Azure Web Sites</a> platform.
+						Managed the <a href="https://code.visualstudio.com/">Visual Studio Code</a> team
+						responsible for the core engineering system, Electron integration,
+						GitHub integration, extension management, workbench UI, SCM integration, distribution,
+						internal tools, open-source management, etc. Security and compliance champion.
+						Open-sourced <a href="https://code.visualstudio.com/docs/copilot/overview">GitHub Copilot Chat</a>.
 					</p>
 				</article>
 				<article>
 					<header>
-						<h1>Software Engineer</h1>
-						<span><a href="https://www.ibm.com/">IBM</a></span>
-						<span><address>Zürich, Switzerland</address><time>2010 to 2011</time></span>
+						<h3 class="has-tooltip">Principal Software Engineer
+							<span class="tooltip">
+								<span class="tooltip-step"><span class="tooltip-year">2011</span> Software Engineer</span>
+								<span class="tooltip-step"><span class="tooltip-year">2013</span> Software Engineer II</span>
+								<span class="tooltip-step"><span class="tooltip-year">2015</span> Senior Software Engineer</span>
+								<span class="tooltip-step current"><span class="tooltip-year">2019</span> Principal Software
+									Engineer</span>
+							</span>
+						</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.microsoft.com/">Microsoft</a></span>
+							<span class="location">Zürich, Switzerland</span>
+							<span class="date">2011 to 2022</span>
+						</div>
+					</header>
+					<p>
+						Part of the founding team of VS Code.
+						Worked on early language features, core UI widgets, SCM integration (Git, GitHub),
+						extension management, engineering system, distribution, internal tools,
+						<a href="https://github.com/microsoft/vscode">open-source</a> management,
+						<a href="http://vscode.dev/">vscode.dev</a>, etc.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h3>Software Engineer</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.ibm.com/">IBM</a></span>
+							<span class="location">Zürich, Switzerland</span>
+							<span class="date">2010 to 2011</span>
+						</div>
 					</header>
 					<p>
 						Engineering work under the Planning and Work Item teams of the
@@ -60,108 +158,158 @@
 				</article>
 				<article>
 					<header>
-						<h1>Mobile Software Developer</h1>
-						<span><a href="https://www.ethz.ch/">ETH Zürich</a></span>
-						<span><address>Zürich, Switzerland</address><time>2009 to 2010</time></span>
+						<h3>Mobile Software Developer</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.ethz.ch/">ETH Zürich</a></span>
+							<span class="location">Zürich, Switzerland</span>
+							<span class="date">2009 to 2010</span>
+						</div>
 					</header>
 					<p>
-						Part-time iPhone application development under enterprise collaborations with ETH Zürich. Developed <a href="https://itunes.apple.com/ch/app/mobiliar-emergency/id356198972?mt=8&amp;ign-mpt=uo%3D6">Mobiliar Notruf</a>, the first version of the <a href="https://www.mobi.ch/">Mobiliar</a> insurance company app.
+						Part-time iPhone application development under enterprise collaborations with ETH Zürich. Developed
+						Mobiliar Notruf, the first version of the <a href="https://www.mobi.ch/">Mobiliar</a> insurance company
+						app.
 					</p>
 				</article>
 			</section>
-			<section class="thirteen columns">
-				<h1>Education</h1>
+			<section>
+				<h2>Education</h2>
 				<article>
 					<header>
-						<h1>MSc Computer Science, Distributed Systems</h1>
-						<span><a href="https://www.ethz.ch/">ETH Zürich</a></span>
-						<span><address>Zürich, Switzerland</address><time>2009 to 2010</time></span>
+						<h3>MSc Computer Science, Distributed Systems</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.ethz.ch/">ETH Zürich</a></span>
+							<span class="location">Zürich, Switzerland</span>
+							<span class="date">2009 to 2010</span>
+						</div>
 					</header>
-					<p class="gpa"><em>GPA</em> <strong>5,31</strong> / 6</p>
+					<p><span class="label">GPA</span> <strong>5,31</strong> / 6</p>
 					<p>
-						<em>Thesis</em> J. Moreno, D. Kossmann, T. Kraska, S. Loesing, <a href="https://e-collection.library.ethz.ch/eserv/eth:1987/eth-1987-01.pdf">“A testing framework for cloud storage systems”</a>.
+						<span class="label">Thesis</span> J. Moreno, D. Kossmann, T. Kraska, S. Loesing, <a
+							href="https://e-collection.library.ethz.ch/eserv/eth:1987/eth-1987-01.pdf">“A testing framework for cloud
+							storage systems”</a>.
 					</p>
 				</article>
 				<article>
 					<header>
-						<h1>BSc Computer Science</h1>
-						<span><a href="https://www.fct.unl.pt/">FCT UNL</a></span>
-						<span><address>Portugal</address><time>2005 to 2008</time></span>
+						<h3>BSc Computer Science</h3>
+						<div class="meta">
+							<span class="company"><a href="https://www.fct.unl.pt/">FCT UNL</a></span>
+							<span class="location">Portugal</span>
+							<span class="date">2005 to 2008</span>
+						</div>
 					</header>
-					<p class="gpa"><em>GPA</em> <strong>17,34</strong> / 20</p>
+					<p><span class="label">GPA</span> <strong>17,34</strong> / 20</p>
 					<p>
 						Two merit scholarships, two lab assistant scholarships.
 					</p>
 				</article>
 			</section>
-			<section class="six columns">
-				<h1>Projects</h1>
-				<article>
-					<header>
-						<h1><a href="https://gifcap.dev/">gifcap</a></h1>
-						<span><time>since 2020</time></span>
-					</header>
-					<p>
-						Create animated GIFs from a screen recording, using a modern browser.
-					</p>
-				</article>
-				<article>
-					<header>
-						<h1><a href="https://joaomoreno.github.io/thyme/">Thyme</a></h1>
-						<span><time>since 2010</time></span>
-					</header>
-					<p>
-						An <a href="https://github.com/joaomoreno/thyme">open-source</a> timer app for OS X.
-					</p>
-				</article>
-				<article>
-					<header>
-						<h1><a href="https://appmodo.com/10767/songsketch-review-for-iphone-and-ipod-touch/">Songsketch</a></h1>
-						<span><time>2009 to 2010</time></span>
-					</header>
-					<p>
-						An iOS app that allows you to record, catalog, annotate and remember the songs you create.
-					</p>
-				</article>
-				<article>
-					<header>
-						<h1><a href="https://sourceforge.net/projects/quicktext/">QuickText</a></h1>
-						<span><time>2006 to 2009</time></span>
-					</header>
-					<p>
-						An open-source <a href="https://notepad-plus-plus.org/">Notepad++</a> plugin for text substitution with multi-field inputs, similar to Tab Triggers.
-					</p>
-				</article>
-			</section>
-			<section class="six columns">
-				<h1>Initiatives</h1>
-				<article>
-					<header>
-						<h1><a href="http://blog.0x82.com/2008/05/26/barcampfct-my-side-of-the-story/">BarCampFCT</a></h1>
-						<span><time>May 24, 2008</time></span>
-					</header>
-					<p>
-						Creation, organization and design of a web technologies event sponsored by <a href="https://www.sapo.pt/">SAPO</a>, <a href="https://corefactor.pt/">CoreFactor</a> and MariaCafé.
-					</p>
-				</article>
-			</section>
-			<section class="six columns">
-				<h1>Interests</h1>
-				<article>
-					<p><a href="https://last.fm/user/alphpt">Music</a>, <a href="https://www.imdb.com/user/ur24230264/ratings">movies, TV shows</a>, <a href="https://www.strava.com/athletes/2444905">running</a>, food &amp; travel.</p>
-				</article>
-			</section>
-		</div>
+
+			<div class="two-col">
+				<section>
+					<h2>Projects</h2>
+					<article>
+						<header>
+							<h3><a href="https://gifcap.dev/">gifcap</a></h3>
+							<div class="meta"><span class="date">since 2020</span></div>
+						</header>
+						<p>WASM powered GIF screen recorder.</p>
+					</article>
+					<article>
+						<header>
+							<h3><a href="https://joaomoreno.github.io/thyme/">Thyme</a></h3>
+							<div class="meta"><span class="date">since 2010</span></div>
+						</header>
+						<p>A timer for OS X.</p>
+					</article>
+					<article>
+						<header>
+							<h3><a href="https://appmodo.com/10767/songsketch-review-for-iphone-and-ipod-touch/">Songsketch</a></h3>
+							<div class="meta"><span class="date">2009 to 2010</span></div>
+						</header>
+						<p>An iOS app that allows you to record, catalog, annotate and remember the songs you create.</p>
+					</article>
+					<article>
+						<header>
+							<h3><a href="https://sourceforge.net/projects/quicktext/">QuickText</a></h3>
+							<div class="meta"><span class="date">2006 to 2009</span></div>
+						</header>
+						<p>An open-source <a href="https://notepad-plus-plus.org/">Notepad++</a> plugin for text substitution with
+							multi-field inputs, similar to Tab Triggers.</p>
+					</article>
+				</section>
+
+				<div>
+					<section>
+						<h2>Initiatives</h2>
+						<article>
+							<header>
+								<h3><a href="http://blog.0x82.com/2008/05/26/barcampfct-my-side-of-the-story/">BarCampFCT</a></h3>
+								<div class="meta"><span class="date">May 24, 2008</span></div>
+							</header>
+							<p>
+								Creation, organization and design of a web technologies event sponsored by <a
+									href="https://www.sapo.pt/">SAPO</a>, <a href="https://corefactor.pt/">CoreFactor</a> and MariaCafé.
+							</p>
+						</article>
+					</section>
+
+					<section>
+						<h2>Family</h2>
+						<article>
+							<p>Loving father of a <span id="family-ages"></span>.</p>
+							<script>
+									(function () {
+										const births = [new Date(2019, 7, 14), new Date(2024, 0, 13)];
+										const now = new Date();
+										const ages = births.map(b => {
+											let age = now.getFullYear() - b.getFullYear();
+											if (now.getMonth() < b.getMonth() || (now.getMonth() === b.getMonth() && now.getDate() < b.getDate())) age--;
+											return age;
+										});
+										document.getElementById('family-ages').textContent = ages.join(' and ') + ' year old';
+									})();
+							</script>
+						</article>
+					</section>
+
+					<section>
+						<h2>Interests</h2>
+						<article>
+							<p><a href="https://last.fm/user/alphpt">Music</a>, <a
+									href="https://www.imdb.com/user/ur24230264/ratings">movies, TV shows</a>, <a
+									href="https://www.strava.com/athletes/2444905">running</a>, food &amp; travel.</p>
+						</article>
+					</section>
+				</div>
+			</div>
+		</main>
 	</div>
 
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function () {
+			const root = document.documentElement;
+			const toggle = document.querySelector('.theme-toggle');
+			const stored = localStorage.getItem('theme') || 'auto';
 
-		ga('create', 'UA-39456503-2', 'auto');
-		ga('send', 'pageview');
+			function apply(theme) {
+				root.setAttribute('data-theme', theme);
+				toggle.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.theme === theme));
+			}
+
+			apply(stored);
+
+			toggle.addEventListener('click', function (e) {
+				const btn = e.target.closest('button');
+				if (!btn) return;
+				const theme = btn.dataset.theme;
+				localStorage.setItem('theme', theme);
+				apply(theme);
+			});
+		})();
 	</script>
+	<script data-goatcounter="https://joaomoreno.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
+
 </html>
